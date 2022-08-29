@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+body {
+    margin: 0;
+    background: radial-gradient(circle at top, #edf5f5, #c6e9f7);
+    font-family: poppins;
+    overflow-x: hidden;
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header {
+    width: 100%;
+    height: 13vh;
+    background: linear-gradient(90deg, #A1DBF1 0%, #00B6BC 100%);
+    box-shadow: 0 1px 10px #00B6BC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+
+header>h1 {
+    font-size: 2.5rem;
+    padding-block: 0;
+    margin-block: 0;
+}
+
+main {
+    width: 90vw;
+    height: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-container,
+.right-container {
+    width: 50%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.right-container {
+    align-items: center;
+    overflow-x: auto;
+}
+
+
+
+/* Form Inputs Styles */
+
+input {
+    caret-color: red;
+}
+
+.containerr {
+    position: relative;
+    top: 2rem;
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    /* background: #ecf0f3; */
+    background: #E4F4F3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+    transition: all .5s ease-in-out;
+}
+
+.containerr:hover {
+    border-top: .1px solid rgb(255, 255, 255);
+    border-bottom: .1px solid rgb(255, 255, 255);
+    box-shadow: 14px 14px 20px #a1a8ae, -14px -14px 20px rgb(196, 196, 196);
+}
+
+.brand-logo {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-logo>i {
+    font-size: 3.5rem;
+    color: #00B6BC;
+}
+
+/* .brand-title {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #1DA1F2;
+  letter-spacing: 1px;
+} */
+
+.inputs {
+    text-align: left;
+    margin-top: 30px;
+}
+
+label,
+input,
+button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+label:nth-of-type(2) {
+    margin-top: 12px;
+}
+
+input::placeholder {
+    color: gray;
+}
+
+input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.addContact-button {
+    color: white;
+    margin-top: 3rem;
+    /* background: #1DA1F2; */
+    background: #00B6BC;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addContact-button:hover {
+    box-shadow: none;
+    background: #36d5da;
+    color: black;
+    box-shadow: 0 0 5px black;
+}
+
+.addContact-button>i {
+    margin-right: .5rem;
+}
+
+/* Contact List styles */
+
+.contactList-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: .5rem;
+}
+
+.empty-list-container {
+    position: relative;
+    top: 2rem;
+    width: 380px;
+    height: 150px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #E4F4F3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    text-align: center;
+}
+
+.empty-list-container>h2 {
+    font-size: 1.8rem;
+}
+
+.empty-list-container:hover {
+    border-top: .1px solid rgb(255, 255, 255);
+    border-bottom: .1px solid rgb(255, 255, 255);
+    box-shadow: 14px 14px 20px #a1a8ae, -14px -14px 20px rgb(196, 196, 196);
+}
+
+.contact-container {
+    position: relative;
+    top: 2rem;
+    width: 420px;
+    height: 100px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    /* background: #00B6BC; */
+    background: linear-gradient(270deg, #00B6BC 0%, #A1DBF1 100%);
+    box-shadow: inset 0 0 2px rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.contact-container:hover {
+    box-shadow: 0 0 5px black;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.avatar {
+    padding: .5rem;
+    border-radius: 30px;
+    position: absolute;
+    left: 1rem;
+    box-shadow: 0 0 5px #ffffff;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+.avatar>i {
+    font-size: 2.5rem;
+    text-shadow: 0 0 5px #A1DBF1;
+}
+
+.trash {
+    padding: .5rem;
+    border-radius: 30px;
+    position: absolute;
+    right: 1rem;
+    box-shadow: 0 0 5px #ffffff;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+.trash:hover {
+    background: rgb(252, 89, 89);
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+}
+
+.trash>i {
+    font-size: 2rem;
+}
+
+.name {
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.email {
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 0;
+}
